@@ -1,0 +1,38 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <title>Getting Started Extension's Popup</title>
+    <meta charset="UTF-8">
+    <link href="css/options.css" rel="stylesheet" type="text/css" />
+    <script src="jquery-3.1.1.min.js"></script>
+    <script src="js/options.js"></script>
+    <script src="js/utility.js"></script>
+    <script src="js/constants.js"></script>
+    
+  </head>
+  <body>
+    <label>this is options page extension</label>
+    Favorite color:
+    <select id="color">
+     <option value="red">red</option>
+     <option value="green">green</option>
+     <option value="blue">blue</option>
+     <option value="yellow">yellow</option>
+    </select>
+    
+    <label>
+      <input type="checkbox" id="like">
+      I like colors.
+    </label>
+    
+    <div id="status"></div>
+    <button id="save">Save</button>
+    
+  </body>
+</html>
+
